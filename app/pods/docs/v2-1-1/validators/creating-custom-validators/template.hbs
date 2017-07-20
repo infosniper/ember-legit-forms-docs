@@ -9,7 +9,7 @@
 /* app/validators/foo-validator.js */
 
 import Ember from 'ember';
-export default Ember.Object.create({
+export default Ember.Object.extend({
   validate(value) {
     if (value !== 'foo') {
       return 'value must be foo!';
